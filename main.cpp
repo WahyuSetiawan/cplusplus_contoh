@@ -10,12 +10,14 @@ int main()
 
     for (int i = 0; i < banyaknyaMasukan; i++)
     {
+        cout << "berikan masukan pada " << i + 1 << " : ";
         cin >> masukan[i];
+        cout << "\n";
     }
 
     for (int tampilanData = 0; tampilanData < banyaknyaMasukan; tampilanData++)
     {
-        cout << masukan[tampilanData];
+        cout << "masukan " << tampilanData + 1 << masukan[tampilanData] << "\n";
     }
 
     return 0;
