@@ -3,15 +3,48 @@
 
 using namespace std;
 
-map<string, int> dataLaundry()
+struct hargaCucian
 {
-    map<string, int> data;
+    string jenisCucian;
+    int harga;
+    string satuan;
+};
 
-    data.insert(pair<string, int>("bantal", 10000));
-    data.insert(pair<string, int>("baju", 10));
-    data.insert(pair<string, int>("selimut", 10000));
+hargaCucian *dataLaundry()
+{
+    hargaCucian daftarCucian[10] = {};
 
-    return data;
+    daftarCucian[0] = hargaCucian{
+        "bantal", 10000, "bantal"};
+
+    daftarCucian[1] = hargaCucian{
+        "bantal", 10000, "bantal"};
+
+    daftarCucian[2] = hargaCucian{
+        "bantal", 10000, "bantal"};
+
+    daftarCucian[3] = hargaCucian{
+        "bantal", 10000, "bantal"};
+
+    daftarCucian[4] = hargaCucian{
+        "bantal", 10000, "bantal"};
+
+    daftarCucian[5] = hargaCucian{
+        "bantal", 10000, "bantal"};
+
+    daftarCucian[6] = hargaCucian{
+        "bantal", 10000, "bantal"};
+
+    daftarCucian[7] = hargaCucian{
+        "bantal", 10000, "bantal"};
+
+    daftarCucian[8] = hargaCucian{
+        "bantal", 10000, "bantal"};
+
+    daftarCucian[9] = hargaCucian{
+        "bantal", 10000, "bantal"};
+
+    return daftarCucian;
 }
 
 int diskonDarJumlahTotal(int totalJumlah)
