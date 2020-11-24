@@ -9,18 +9,18 @@ int tampilkanMenu()
 
     int pilihanMenu = 0;
 
-    cout << "Ini merupakan suatu contoh aplikasi untuk perhitungan laundry" << endl;
-    cout << endl;
-    cout << endl;
-    cout << "MENU : " << endl;
-    cout << endl;
-    cout << "1. Tampilkan daftar dari jumlah harga pakaian" << endl;
-    cout << "2. Menghitung jumlah dari total laundry" << endl;
-    cout << "3. Menampilkan Transaksi Sebelumnya" << endl;
-    cout << endl;
+    cout << "Ini merupakan suatu contoh aplikasi untuk perhitungan laundry" << endl
+         << endl
+         << endl;
+    cout << "MENU : " << endl
+         << endl;
+    cout << "1. Tampilkan daftar dari jumlah harga pakaian" << endl
+         << "2. Menambahkan pembelian dari laundry" << endl
+         << "2. Menghitung jumlah dari total laundry" << endl
+         << "3. Menampilkan Transaksi Sebelumnya" << endl
+         << endl;
     cout << "Pilihlah nomor dari menu yang akan kamu pilih (enter untuk tidak memilih): " << endl;
     cin >> pilihanMenu;
-    cin.ignore(100, '\n');
 
     return pilihanMenu;
 }
@@ -49,14 +49,62 @@ int tampilanMenuBiaya()
     }
 
     cout << endl;
-    cout << "Pilih menu lanjutan : " << endl;
-    cout << endl;
+    cout << "Pilih menu lanjutan : " << endl
+         << endl;
     cout << "0. Ke menu utama" << endl;
-    cout << "1. Exit" << endl;
-    cout << endl;
+    cout << "1. Exit" << endl
+         << endl;
     cout << "Pilihlah menu yang ingin kamu tuju : " << endl;
 
     cin >> menu;
 
     return menu;
+}
+
+int tampilanTambahTransaksi()
+{
+    system("clear");
+
+    struct transaksiCucian transaksiCucianSementara;
+
+    cout << "TAMPILAN UNTUK MENAMBAHKAN TRANSAKSI UNTUK LAUNDRY"
+         << endl
+         << "Masukan nama : "
+         << endl;
+
+    cin >> transaksiCucianSementara.nama;
+
+    cout << "Masukan tanggal sekarang : "
+         << endl;
+
+    cin >> transaksiCucianSementara.tanggal;
+
+    cout << "Nasukan no transaksi "
+         << endl;
+
+    cin >> transaksiCucianSementara.noTransaksi;
+
+    cout << "Apakah anda yakin dengan data yang dimasukan ? "
+         << endl;
+
+    string jawab;
+
+    cin >> jawab;
+
+    if (jawab == "y")
+    {
+        system("clear");
+        cout << "Data yang dimasukan berupa"
+             << endl
+             << "No Transaksi" << transaksiCucianSementara.noTransaksi << endl
+             << "Nama : " << transaksiCucianSementara.nama << endl
+             << "tanggal : " << transaksiCucianSementara.tanggal << endl;
+        cin >> jawab;
+
+        return 0;
+    }
+    else
+    {
+        return 0;
+    }
 }

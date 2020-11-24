@@ -3,46 +3,22 @@
 
 using namespace std;
 
-struct hargaCucian
-{
-    string jenisCucian;
-    int harga;
-    string satuan;
-};
+static struct transaksiCucian kumpulanTransaksiCucian[] = {};
 
 hargaCucian *dataLaundry()
 {
     static hargaCucian daftarCucian[10] = {};
 
-    daftarCucian[0] = hargaCucian{
-        "bantal", 10000, "bantal"};
-
-    daftarCucian[1] = hargaCucian{
-        "bantal", 10000, "bantal"};
-
-    daftarCucian[2] = hargaCucian{
-        "bantal", 10000, "bantal"};
-
-    daftarCucian[3] = hargaCucian{
-        "bantal", 10000, "bantal"};
-
-    daftarCucian[4] = hargaCucian{
-        "bantal", 10000, "bantal"};
-
-    daftarCucian[5] = hargaCucian{
-        "bantal", 10000, "bantal"};
-
-    daftarCucian[6] = hargaCucian{
-        "bantal", 10000, "bantal"};
-
-    daftarCucian[7] = hargaCucian{
-        "bantal", 10000, "bantal"};
-
-    daftarCucian[8] = hargaCucian{
-        "bantal", 10000, "bantal"};
-
-    daftarCucian[9] = hargaCucian{
-        "bantal", 10000, "bantal"};
+    daftarCucian[0] = hargaCucian{1, "bantal", 10000, "bantal"};
+    daftarCucian[1] = hargaCucian{2, "bantal", 10000, "bantal"};
+    daftarCucian[2] = hargaCucian{3, "bantal", 10000, "bantal"};
+    daftarCucian[3] = hargaCucian{4, "bantal", 10000, "bantal"};
+    daftarCucian[4] = hargaCucian{5, "bantal", 10000, "bantal"};
+    daftarCucian[5] = hargaCucian{6, "bantal", 10000, "bantal"};
+    daftarCucian[6] = hargaCucian{7, "bantal", 10000, "bantal"};
+    daftarCucian[7] = hargaCucian{8, "bantal", 10000, "bantal"};
+    daftarCucian[8] = hargaCucian{9, "bantal", 10000, "bantal"};
+    daftarCucian[9] = hargaCucian{10, "bantal", 10000, "bantal"};
 
     return daftarCucian;
 }
@@ -50,4 +26,13 @@ hargaCucian *dataLaundry()
 int diskonDarJumlahTotal(int totalJumlah)
 {
     return totalJumlah + (10 / 100);
+}
+
+int menambahkanTransaksiCucian(struct transaksiCucian tCucian)
+{
+    int addIndex = sizeof(kumpulanTransaksiCucian) + 1;
+
+    kumpulanTransaksiCucian[addIndex] = tCucian;
+
+    return 0;
 }
