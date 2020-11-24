@@ -31,18 +31,32 @@ int tampilanMenuBiaya()
 
     int menu = 0;
 
+    cout << "DAFTAR HARGA CUCIAN YANG DITERAPKAN" << endl;
+
     cout << "----------------------------------------------" << endl;
     cout << "Jenis Cucian"
+         << "\t\t"
+         << "Satuan"
          << "\t"
          << "Harga" << endl;
     cout << "----------------------------------------------" << endl;
 
     hargaCucian *data = dataLaundry();
 
-    cout << data[1].harga;
+    for (int i = 0; i < sizeof(data); i++)
+    {
+        cout << i + 1 << ". " << data[i].jenisCucian << "\t\t" << data[i].satuan << "\t" << data[i].harga << endl;
+    }
 
-    cin >>
-        menu;
+    cout << endl;
+    cout << "Pilih menu lanjutan : " << endl;
+    cout << endl;
+    cout << "0. Ke menu utama" << endl;
+    cout << "1. Exit" << endl;
+    cout << endl;
+    cout << "Pilihlah menu yang ingin kamu tuju : " << endl;
+
+    cin >> menu;
 
     return menu;
 }

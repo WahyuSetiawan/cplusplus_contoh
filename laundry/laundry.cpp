@@ -18,7 +18,12 @@ int main()
         case 1:
             while (int kembalianMenuBiaya = tampilanMenuBiaya() != 0)
             {
-                cout << kembalianMenuBiaya;
+                switch (kembalianMenuBiaya)
+                {
+                case 1:
+                    return 0;
+                    break;
+                }
             }
 
             break;

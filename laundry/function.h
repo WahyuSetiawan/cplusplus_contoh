@@ -12,7 +12,7 @@ struct hargaCucian
 
 hargaCucian *dataLaundry()
 {
-    hargaCucian daftarCucian[10] = {};
+    static hargaCucian daftarCucian[10] = {};
 
     daftarCucian[0] = hargaCucian{
         "bantal", 10000, "bantal"};
