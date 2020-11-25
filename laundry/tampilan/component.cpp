@@ -5,12 +5,11 @@
 
 void tampilTitle(string title)
 {
-
     cout << setw(75) << setfill('-') << "\n"
-         << setfill(' ')
-         << title
-         << endl
-         << setw(75) << setfill('-') << "\n"
+         << setfill(' ');
+    cout << title
+         << endl;
+    cout << setw(75) << setfill('-') << "\n"
          << setfill(' ')
          << endl
          << "\n";

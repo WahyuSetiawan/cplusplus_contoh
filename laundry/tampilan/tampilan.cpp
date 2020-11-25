@@ -6,10 +6,11 @@
 #include <sstream>
 #include <string>
 
-#include "../global/function.h"
 #include "./component.h"
 #include "./harga.h"
 #include "./transaksi.h"
+
+int tampilkanMenu();
 
 int tampilanMain()
 {

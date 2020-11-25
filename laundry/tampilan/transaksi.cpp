@@ -18,16 +18,19 @@ int tampilanTambahTransaksi()
 
     tampilTitle("TAMPILAN UNTUK MENAMBAHKAN TRANSAKSI UNTUK LAUNDRY");
 
-    cout << "Masukan nama \t\t: ";
+    cout << setw(25) << left << "Masukan nama "
+         << ": ";
     cin >> transaksiCucianSementara.nama;
 
-    cout << "Masukan tanggal \t: ";
+    cout << setw(25) << left << "Masukan tanggal"
+         << ": ";
     cin >> transaksiCucianSementara.tanggal;
 
-    cout << "Nasukan no transaksi \t: ";
+    cout << setw(25) << left << "Nasukan no transaksi "
+         << ": ";
     cin >> transaksiCucianSementara.noTransaksi;
 
-    cout << "Apakah anda yakin dengan data yang dimasukan ? ";
+    cout << "\nApakah anda yakin dengan data yang dimasukan ? ";
 
     string jawab;
 
@@ -37,22 +40,7 @@ int tampilanTambahTransaksi()
     {
         system("clear");
 
-        tampilTitle("HASIL DARI DATA TRANSAKSI YANG DIMASUKAN DI AWAL");
-        tampilanDetail(transaksiCucianSementara);
-
-        cout << "Apakah anda ingin lanjutkan penginputan tentang detail Transaksi ?";
-
-        cin >>
-            jawab;
-
-        if (jawab == "y")
-        {
-            // menambahkanTransaksiCucian(transaksiCucianSementara);
-
-            return tampilanInputanDetail(transaksiCucianSementara);
-        }
-
-        return 0;
+        return tampilanInputanDetail(transaksiCucianSementara);
     }
     else
     {
