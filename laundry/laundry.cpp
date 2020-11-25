@@ -1,12 +1,11 @@
 #include <iostream>
 #include <stdlib.h>
-#include "./model.h"
+
 #include "./function.h"
 #include "./tampilan.h"
+#include "./tampilan/tampilan_form.h"
 
 using namespace std;
-
-int tampilkanMenu();
 
 int main()
 {
@@ -34,7 +33,7 @@ int main()
             continue;
 
         case 2:
-        
+
             while (true)
             {
                 int kembalianMenuBiaya = tampilanTambahTransaksi();

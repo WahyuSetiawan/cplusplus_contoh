@@ -1,3 +1,7 @@
+#ifndef Included_model_h
+
+#define Included_model_h
+
 #include <string>
 #include <array>
 #include <vector>
@@ -27,3 +31,5 @@ struct hargaCucian
     int harga;
     string satuan;
 };
+
+#endif

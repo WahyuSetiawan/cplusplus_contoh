@@ -1,21 +1,34 @@
+#ifndef Included_tampilan_h
+
+#define Included_tampilan_h
+
 #include <stdlib.h>
 #include <iostream>
+#include <iomanip>
+#include <sstream>
+#include <string>
+
+#include "./function.h"
+#include "./tampilan/tampilan_form.h"
 
 using namespace std;
 
 void tampilanDetail(transaksiCucian transaksiCucian);
+void tampilanDaftarCucian(transaksiCucian transaksiCucian);
 int tampilanInputanDetail(transaksiCucian transaksiCucian);
 int tampilanInputanDetailForm(transaksiCucian transaksiCucian);
 
 void tampilTitle(string title)
 {
 
-    cout << "--------------------------------------------------------------------" << endl
-         << endl
+    cout << setw(75) << setfill('-') << "\n"
+         << setfill(' ')
          << title
          << endl
-         << "--------------------------------------------------------------------" << endl
-         << endl;
+         << setw(75) << setfill('-') << "\n"
+         << setfill(' ')
+         << endl
+         << "\n";
 }
 
 int tampilkanMenu()
@@ -111,7 +124,10 @@ int tampilanTambahTransaksi()
         tampilTitle("HASIL DARI DATA TRANSAKSI YANG DIMASUKAN DI AWAL");
         tampilanDetail(transaksiCucianSementara);
 
-        cin >> jawab;
+        cout << "Apakah anda ingin lanjutkan penginputan tentang detail Transaksi ?";
+
+        cin >>
+            jawab;
 
         if (jawab == "y")
         {
@@ -128,15 +144,48 @@ int tampilanTambahTransaksi()
     }
 }
 
+void tampilanDaftarCucian(transaksiCucian transaksiCucian)
+{
+    cout << "Tampilan dari daftar cucian (" << transaksiCucian.detailCucian.size() << ")" << endl;
+
+    cout << setw(75) << setfill('-')
+         << "\n"
+         << setfill(' ')
+         << setw(2) << left << "|" << setw(3) << left << "No"
+         << setw(2) << left << "|" << setw(30) << left << "Cucian"
+         << setw(2) << left << "|" << setw(10) << left << "Jumlah"
+         << setw(2) << left << "|" << setw(10) << left << "Satuan"
+         << setw(2) << left << "|" << setw(10) << left << "Subtotal"
+         << setw(2) << left << "|";
+
+    cout << setw(75) << setfill('-') << "\n"
+         << setfill(' ') << endl;
+
+    if (transaksiCucian.detailCucian.size() == 0)
+    {
+        cout << setw(2) << "|" << setw(75 - 4) << "Tidak ada data detail cucian" << setw(2) << "|";
+    }
+
+    cout << setw(75) << setfill('-') << "\n"
+         << setfill(' ') << endl;
+
+    cout << setw(2) << left << "|"
+         << setw(75 - 2 - 2 - 2 - 10) << "Total"
+         << setw(2) << left << "|"
+         << setw(10) << right << 100000
+         << setw(2) << left << "|";
+
+    cout << setw(75) << setfill('-') << "\n"
+         << setfill(' ') << endl;
+}
+
 void tampilanDetail(transaksiCucian transaksiCucian)
 {
     cout << ""
          << "No Transaksi \t: " << transaksiCucian.noTransaksi << endl
          << "Nama \t\t: " << transaksiCucian.nama << endl
          << "Tanggal \t: " << transaksiCucian.tanggal << endl
-         << endl
-         << "Apakah anda ingin lanjutkan penginputan tentang detail Transaksi ?";
-    ;
+         << endl;
 }
 
 int tampilanInputanDetail(transaksiCucian transaksiCucian)
@@ -165,11 +214,27 @@ int tampilanInputanDetailForm(transaksiCucian transaksiCucian)
     int menu;
 
     tampilTitle("MASUKAN DETAIL TRANSAKSI");
+    tampilanDetail(transaksiCucian);
+    tampilanDaftarCucian(transaksiCucian);
 
-    cout << "masukan data pertama";
+    cout << endl
+         << endl
+         << "Aksi : " << endl
+         << "1. tambahkan" << endl;
 
-    cout << "jenis barang";
+    if (transaksiCucian.detailCucian.size() > 0)
+    {
+        cout << "2. ubah" << endl
+             << "3. hapus" << endl
+             << "4. simpan" << endl;
+    }
+
+    cout << "5. exit" << endl;
+
+    cout << "Tentukan dengan Aksi : ";
     cin >> menu;
 
     return menu;
 }
+
+#endif
