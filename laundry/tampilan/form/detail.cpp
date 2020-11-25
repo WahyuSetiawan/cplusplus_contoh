@@ -1,11 +1,6 @@
-#ifndef Included_tampilan_form_h
-
-#define Included_tampilan_form_h
-
 #include <iostream>
 #include <stdlib.h>
-
-using namespace std;
+#include "./detail.h"
 
 transaksiDetailCucian tampilanTambahDetailCucian()
 {
@@ -22,5 +17,3 @@ transaksiDetailCucian tampilanTambahDetailCucian()
 
     return tDetailCucian;
 }
-
-#endif

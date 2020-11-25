@@ -15,6 +15,7 @@ int tampilanInputanDetail(transaksiCucian transaksiCucian);
 int tampilanInputanDetailForm(transaksiCucian transaksiCucian);
 int tampilkanMenu();
 int tampilanMenuBiaya();
+int tampilanMain();
 int tampilanTambahTransaksi();
 int tampilanInputanDetail(transaksiCucian transaksiCucian);
 int tampilanInputanDetailForm(transaksiCucian transaksiCucian);
