@@ -1,6 +1,6 @@
-#ifndef Included_model_h
+#ifndef MODEL_H
 
-#define Included_model_h
+#define MODEL_H
 
 #include <string>
 #include <array>

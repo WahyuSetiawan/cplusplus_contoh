@@ -1,5 +1,5 @@
 #include <vector>
-#include "./function.h";
+#include "./function.h"
 
 vector<transaksiCucian> kumpulanTransaksiCucian;
 

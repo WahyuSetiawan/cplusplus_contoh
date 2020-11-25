@@ -1,9 +1,8 @@
 #include <iostream>
 #include <stdlib.h>
 
-#include "./function.h"
-#include "./tampilan.h"
-#include "./tampilan/tampilan_form.h"
+#include "./global/function.h"
+#include "./tampilan/tampilan.h"
 
 using namespace std;
 

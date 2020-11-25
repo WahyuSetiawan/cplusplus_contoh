@@ -1,22 +1,11 @@
-#ifndef Included_tampilan_h
+#include "tampilan.h"
+#include "../global/function.h"
 
-#define Included_tampilan_h
-
-#include <stdlib.h>
-#include <iostream>
-#include <iomanip>
-#include <sstream>
-#include <string>
-
-#include "./function.h"
-#include "./tampilan/tampilan_form.h"
-
-using namespace std;
-
+void tampilTitle(string title);
 void tampilanDetail(transaksiCucian transaksiCucian);
 void tampilanDaftarCucian(transaksiCucian transaksiCucian);
-int tampilanInputanDetail(transaksiCucian transaksiCucian);
-int tampilanInputanDetailForm(transaksiCucian transaksiCucian);
+void tampilanDaftarCucian(transaksiCucian transaksiCucian);
+void tampilanDetail(transaksiCucian transaksiCucian);
 
 void tampilTitle(string title)
 {
@@ -236,5 +225,3 @@ int tampilanInputanDetailForm(transaksiCucian transaksiCucian)
 
     return menu;
 }
-
-#endif
