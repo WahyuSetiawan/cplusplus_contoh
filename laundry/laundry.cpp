@@ -34,7 +34,7 @@ int main()
             continue;
 
         case 2:
-
+        
             while (true)
             {
                 int kembalianMenuBiaya = tampilanTambahTransaksi();
