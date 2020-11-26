@@ -8,10 +8,10 @@ int main()
     int banyaknyaMasukan = 10;
     int masukan[10] = {};
 
-    for (int i = 0; i < banyaknyaMasukan; i++)
+    for (int langkahMasukan = 0; langkahMasukan < banyaknyaMasukan; langkahMasukan++)
     {
-        cout << "berikan masukan pada " << i + 1 << " : ";
-        cin >> masukan[i];
+        cout << "berikan masukan pada " << langkahMasukan + 1 << " : ";
+        cin >> masukan[langkahMasukan];
         cout << "\n";
     }
 
