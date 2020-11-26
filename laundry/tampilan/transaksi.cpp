@@ -6,6 +6,12 @@
 #include "./component.h"
 #include "./../global/function.h"
 
+/*
+
+lokasi function initialisasi
+
+*/
+
 int tampilanInputanDetail(transaksiCucian transaksiCucian);
 int tampilanInputanDetailForm(transaksiCucian transaksiCucian);
 
@@ -16,6 +22,12 @@ transaksiDetailCucian tampilanFormDetail();
 int tampilanHapusDetaiCucian(transaksiCucian transaksiCucian);
 int tampilIndexEdit(transaksiCucian tCucian);
 bool tampilanKonfirmasiKeluarForm(transaksiCucian tCucian);
+
+/*
+
+implementasi dari function yang ada
+
+*/
 
 int tampilanTambahTransaksi()
 {
@@ -75,6 +87,9 @@ int tampilanInputanDetail(transaksiCucian transaksiCucian)
         case 3:
             transaksiCucianTmp.detailCucian.erase(
                 transaksiCucianTmp.detailCucian.begin() + tampilanHapusDetaiCucian(transaksiCucianTmp));
+            continue;
+        case 4:
+            return menambahkanTransaksiCucian(transaksiCucianTmp);
             continue;
         case 5:
 
