@@ -232,7 +232,7 @@ void tampilanDaftarCucian(transaksiCucian transaksiCucian)
         for (int i = 0; i < transaksiCucian.detailCucian.size(); i++)
         {
             struct transaksiDetailCucian tDetailCucian = transaksiCucian.detailCucian.at(i);
-            struct hargaCucian *tHargaCucian;
+            struct hargaCucian *tHargaCucian = NULL;
 
             for (int indexDetail = 0; indexDetail < sizeof(dataLaundry()); indexDetail++)
             {
