@@ -6,9 +6,10 @@
 #include <sstream>
 #include <string>
 
-#include "./component.h"
-#include "./harga.h"
-#include "./transaksi.h"
+#include "./../component.h"
+#include "./../harga.h"
+#include "./../transaksi.h"
+#include "./../rekap/rekap.h"
 
 int tampilkanMenu();
 
@@ -53,6 +54,10 @@ int tampilanMain()
                 break;
             }
 
+            continue;
+
+        case 4:
+            tampilanRekap();
             continue;
 
         default:

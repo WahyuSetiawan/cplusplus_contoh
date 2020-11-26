@@ -2,7 +2,7 @@
 
 #define TAMPILAN_H
 
-#include "./../model/model.h"
+#include "./../../model/model.h"
 
 using namespace std;
 

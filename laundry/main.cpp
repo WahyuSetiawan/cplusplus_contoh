@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #include "./global/function.h"
-#include "./tampilan/tampilan.h"
+#include "./tampilan/utama/tampilan.h"
 
 using namespace std;
 

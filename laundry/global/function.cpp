@@ -1,4 +1,3 @@
-#include <vector>
 #include "./function.h"
 
 vector<transaksiCucian> kumpulanTransaksiCucian;
@@ -31,4 +30,9 @@ int menambahkanTransaksiCucian(transaksiCucian tCucian)
     kumpulanTransaksiCucian.push_back(tCucian);
 
     return 0;
+}
+
+vector<transaksiCucian> getDataTransaksi()
+{
+    return kumpulanTransaksiCucian;
 }
