@@ -7,7 +7,7 @@ hargaCucian *dataLaundry()
 {
     static hargaCucian daftarCucian[10] = {};
 
-    daftarCucian[0] = hargaCucian{1, "bantal", 10000, "bantal"};
+    daftarCucian[0] = hargaCucian{1, "bantal", 10000, "biji"};
     daftarCucian[1] = hargaCucian{2, "bantal", 10000, "bantal"};
     daftarCucian[2] = hargaCucian{3, "bantal", 10000, "bantal"};
     daftarCucian[3] = hargaCucian{4, "bantal", 10000, "bantal"};
