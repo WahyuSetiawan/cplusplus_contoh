@@ -4,8 +4,8 @@ compile:
 	g++ -c ./global/function.cpp -o build/function.o
 	g++ -c ./tampilan/form/detail.cpp -o build/detail.o
 	g++ -c ./tampilan/component.cpp -o build/component.o
-	g++ -c ./tampilan/harga.cpp -o build/harga.o
-	g++ -c ./tampilan/transaksi.cpp -o build/transaksi.o
+	g++ -c ./tampilan/harga/harga.cpp -o build/harga.o
+	g++ -c ./tampilan/transaksi/transaksi.cpp -o build/transaksi.o
 	g++ -c ./tampilan/rekap/rekap.cpp -o build/rekap.o
 
 	g++ build/main.o \

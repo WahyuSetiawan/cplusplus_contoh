@@ -3,6 +3,7 @@
 #define Included_function_h
 
 #include "./../model/model.h"
+
 #include "vector"
 
 using namespace std;

@@ -7,8 +7,8 @@
 #include <string>
 
 #include "./../component.h"
-#include "./../harga.h"
-#include "./../transaksi.h"
+#include "./../harga/harga.h"
+#include "./../transaksi/transaksi.h"
 #include "./../rekap/rekap.h"
 
 int tampilkanMenu();
@@ -56,7 +56,7 @@ int tampilanMain()
 
             continue;
 
-        case 4:
+        case 3:
             tampilanRekap();
             continue;
 
@@ -81,10 +81,9 @@ int tampilkanMenu()
 
     cout << "MENU : " << endl
          << endl;
-    cout << "1. Tampilkan daftar dari jumlah harga pakaian" << endl
-         << "2. Menambahkan pembelian dari laundry" << endl
-         << "3. Menghitung jumlah dari total laundry" << endl
-         << "4. Menampilkan Transaksi Sebelumnya" << endl
+    cout << "1. Harga Laundry" << endl
+         << "2. Transaksi" << endl
+         << "3. Laporan" << endl
          << endl;
     cout << "Pilihlah nomor dari menu yang akan kamu pilih (enter untuk tidak memilih): " << endl;
     cin >> pilihanMenu;

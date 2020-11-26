@@ -3,8 +3,8 @@
 #include "iostream"
 #include "iomanip"
 
-#include "./component.h"
-#include "./../global/function.h"
+#include "./../component.h"
+#include "./../../global/function.h"
 
 /*
 

@@ -1,6 +1,7 @@
+#include "./detail.h"
+
 #include <iostream>
 #include <stdlib.h>
-#include "./detail.h"
 
 transaksiDetailCucian tampilanTambahDetailCucian()
 {
