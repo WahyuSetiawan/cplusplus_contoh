@@ -11,7 +11,7 @@ int tampilanRekap()
 {
     system("clear");
 
-    tampilTitle("DAFTAR REKAP DARI TRANSAKSI LAUNDRY");
+    viewTitle("DAFTAR REKAP DARI TRANSAKSI LAUNDRY");
 
     cout << "Daftar dari transaksi : " << endl
          << endl;

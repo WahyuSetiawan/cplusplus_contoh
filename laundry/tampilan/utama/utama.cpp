@@ -70,7 +70,7 @@ int tampilkanMenu()
 
     int pilihanMenu = 0;
 
-    tampilTitle("SIMULASI PERHITUNGAN DI LAUNDRY");
+    viewTitle("SIMULASI PERHITUNGAN DI LAUNDRY");
 
     cout << "MENU : " << endl
          << endl;

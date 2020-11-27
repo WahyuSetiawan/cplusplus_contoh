@@ -12,5 +12,6 @@ hargaCucian *dataLaundry();
 int diskonDarJumlahTotal(int totalJumlah);
 int menambahkanTransaksiCucian(transaksiCucian tCucian);
 vector<transaksiCucian> getDataTransaksi();
+int pengembalianLaundry(transaksiCucian tCucian);
 
 #endif

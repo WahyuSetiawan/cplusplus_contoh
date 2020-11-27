@@ -12,7 +12,7 @@ int tampilanMenuBiaya()
 
      int menu = 0;
 
-     tampilTitle("DAFTAR HARGA CUCIAN YANG DITERAPKAN");
+     viewTitle("DAFTAR HARGA CUCIAN YANG DITERAPKAN");
 
      cout << setw(74) << setfill('-') << " " << setfill(' ') << endl;
 

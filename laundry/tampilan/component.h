@@ -6,6 +6,8 @@
 
 using namespace std;
 
-void tampilTitle(string title);
+void viewTitle(string title);
+void viewDaftarTransaksiBelumDiambil();
+void viewDaftarTransaksiTelahDiambil();
 
 #endif

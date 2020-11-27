@@ -35,7 +35,7 @@ int viewTambahTransaksiMasuk()
 
     struct transaksiCucian transaksiCucianSementara;
 
-    tampilTitle("TAMPILAN UNTUK MENAMBAHKAN TRANSAKSI UNTUK LAUNDRY");
+    viewTitle("TAMPILAN UNTUK MENAMBAHKAN TRANSAKSI UNTUK LAUNDRY");
 
     cout << setw(25) << left << "Masukan nama "
          << ": ";
@@ -192,7 +192,7 @@ int tampilanInputanDetailForm(transaksiCucian transaksiCucian)
     system("clear");
     int menu;
 
-    tampilTitle("MASUKAN DETAIL TRANSAKSI");
+    viewTitle("MASUKAN DETAIL TRANSAKSI");
     tampilanDetail(transaksiCucian);
     tampilanDaftarCucian(transaksiCucian);
 

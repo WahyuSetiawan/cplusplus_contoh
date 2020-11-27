@@ -11,7 +11,7 @@ int viewPengambilan()
 {
     system("clear");
 
-    tampilTitle("TRANSAKSI PENGAMBILAN LAUNDRY");
+    viewTitle("TRANSAKSI PENGAMBILAN LAUNDRY");
 
     int menu = -1;
 
@@ -23,11 +23,21 @@ int viewPengambilan()
         cout << tCucian.nama << endl;
     }
 
+    viewDaftarTransaksiBelumDiambil();
+
+    cout << endl
+         << "Aksi : " << endl;
+    cout << "1. Transaksi pengambilan" << endl;
+    cout << "2. exit" << endl;
+
     cin >> menu;
 
-    if (menu < 0)
+    if (menu < 0 || menu == 2)
     {
         return 0;
+    }
+    else if (menu == 1)
+    {
     }
 
     return viewPengambilan();
