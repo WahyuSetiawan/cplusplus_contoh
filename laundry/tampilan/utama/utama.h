@@ -1,6 +1,6 @@
-#ifndef TAMPILAN_H
+#ifndef UTAMA_H
 
-#define TAMPILAN_H
+#define UTAMA_H
 
 #include "./../../model/model.h"
 

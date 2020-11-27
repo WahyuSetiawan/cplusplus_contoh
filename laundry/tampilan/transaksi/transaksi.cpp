@@ -29,7 +29,7 @@ implementasi dari function yang ada
 
 */
 
-int tampilanTambahTransaksi()
+int viewTambahTransaksiMasuk()
 {
     system("clear");
 
@@ -65,6 +65,26 @@ int tampilanTambahTransaksi()
     {
         return 0;
     }
+}
+
+int tampilanTambahTransaksi()
+{
+
+    while (true)
+    {
+        int kembalianMenuBiaya = viewTambahTransaksiMasuk();
+        switch (kembalianMenuBiaya)
+        {
+        case 1:
+            return 0;
+            continue;
+        default:
+            break;
+        }
+        break;
+    }
+
+    return 0;
 }
 
 int tampilanInputanDetail(transaksiCucian transaksiCucian)

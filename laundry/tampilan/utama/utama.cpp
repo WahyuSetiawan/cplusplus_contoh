@@ -1,4 +1,4 @@
-#include "tampilan.h"
+#include "utama.h"
 
 #include <stdlib.h>
 #include <iostream>
@@ -10,6 +10,7 @@
 #include "./../harga/harga.h"
 #include "./../transaksi/transaksi.h"
 #include "./../rekap/rekap.h"
+#include "./../pengambilan/pengambilan.h"
 
 int tampilkanMenu();
 
@@ -39,27 +40,19 @@ int tampilanMain()
             continue;
 
         case 2:
-
-            while (true)
-            {
-                int kembalianMenuBiaya = tampilanTambahTransaksi();
-                switch (kembalianMenuBiaya)
-                {
-                case 1:
-                    return 0;
-                    continue;
-                default:
-                    break;
-                }
-                break;
-            }
+            tampilanTambahTransaksi();
 
             continue;
 
         case 3:
-            tampilanRekap();
+            viewPengambilan();
+
             continue;
 
+        case 4:
+            tampilanRekap();
+            
+            continue;
         default:
             return 0;
             break;
@@ -82,8 +75,9 @@ int tampilkanMenu()
     cout << "MENU : " << endl
          << endl;
     cout << "1. Harga Laundry" << endl
-         << "2. Transaksi" << endl
-         << "3. Laporan" << endl
+         << "2. Transaksi Masuk" << endl
+         << "3. Transaksi Pengambilan" << endl
+         << "4. Laporan" << endl
          << endl;
     cout << "Pilihlah nomor dari menu yang akan kamu pilih (enter untuk tidak memilih): " << endl;
     cin >> pilihanMenu;

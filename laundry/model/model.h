@@ -19,6 +19,7 @@ struct transaksiCucian
     string nama;
     string tanggal;
     string noTransaksi;
+    bool diambil;
     vector<transaksiDetailCucian> detailCucian;
     int total;
     int diskon;
