@@ -36,22 +36,15 @@ int tampilanMain()
                 }
                 break;
             }
-
             continue;
-
         case 2:
             tampilanTambahTransaksi();
-
             continue;
-
         case 3:
             viewPengambilan();
-
             continue;
-
         case 4:
             tampilanRekap();
-            
             continue;
         default:
             return 0;
